@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
-
+import { Analytics } from "@vercel/analytics/next"
+<Analytics />
 // ─── Translations ─────────────────────────────────────────────────────────────
 type Lang = "fr" | "en" | "ar";
 
