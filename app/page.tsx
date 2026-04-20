@@ -1,8 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
-import { Analytics } from "@vercel/analytics/next"
-<Analytics />
+import { Analytics } from "@vercel/analytics/next";
 // ─── Translations ─────────────────────────────────────────────────────────────
 type Lang = "fr" | "en" | "ar";
 
@@ -118,15 +117,15 @@ function NoiseCanvas() {
   );
 }
 
- function Logo({ size = 420 }: { size?: number }) {
+function Logo({ size = 420 }: { size?: number }) {
   // Use public asset path so Next.js serves it correctly in all environments.
   return (
     <Image
       src="/image.png"
       alt="The X Parallel"
       width={size}
-      height={Math.round(size * 0.9)}
-      className="mx-auto select-none h-auto w-auto"
+      height={Math.round(size * 0.947)}
+      className="mx-auto h-auto w-auto select-none"
       priority
     />
   );
@@ -280,6 +279,7 @@ export default function UnderConstruction() {
         </div>
 
       </div>
+      <Analytics />
     </div>
   );
 }
