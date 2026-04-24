@@ -54,7 +54,8 @@ function Logo({ size = 120 }: { size?: number }) {
       alt="The X Parallel"
       width={size}
       height={Math.round(size * 0.947)}
-      className="h-auto w-auto select-none"
+      style={{ width: size, height: "auto" }}
+      className="select-none"
       priority
     />
   );
@@ -374,7 +375,7 @@ export default function WelcomePage() {
 
       {/* Header */}
       <header className="relative z-20 flex justify-between items-center px-6 md:px-12 py-5 border-b border-white/5 a1">
-        <Logo size={90} />
+        <Logo size={64} />
         <span className="text-[9px] tracking-[0.45em] text-white/20 uppercase">
           thexparallel.com
         </span>

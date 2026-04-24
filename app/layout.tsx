@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import { Bebas_Neue, Barlow_Condensed, Barlow } from 'next/font/google'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
